@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/Archivo-600.woff2') format('woff2');
+}
+
+@theme {
+  /* Custom Color Palette */
+  --color-background: #c2e0e5;
+  --color-foreground: rgb(40, 40, 40);
+  --color-muted: oklch(60% 0 0);
+  --color-muted-foreground: oklch(45% 0 0);
+  --color-border: oklch(88% 0.01 200);
+
+  /* Brand color - matching the cyan-green background */
+  --color-brand: oklch(65% 0.08 200);
+
+  /* Minimal semantic colors for compatibility */
+  --color-primary: oklch(40.3% .2392 269.84);
+  --color-primary-foreground: oklch(100% 0 0);
+  --color-secondary: oklch(96% 0 0);
+  --color-secondary-foreground: oklch(20% 0 0);
+  --color-accent: oklch(96% 0 0);
+  --color-accent-foreground: oklch(20% 0 0);
+  --color-destructive: oklch(58% 0.22 29);
+  --color-destructive-foreground: oklch(100% 0 0);
+  --color-card: oklch(100% 0 0);
+  --color-card-foreground: oklch(20% 0 0);
+  --color-popover: oklch(100% 0 0);
+  --color-popover-foreground: oklch(20% 0 0);
+  --color-input: oklch(90% 0 0);
+  --color-ring: oklch(20% 0 0);
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+
+  /* Typography - Archivo headings, ... body */
+  --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-display: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Text sizes - Refined hierarchy */
+  --text-display: 5rem;
+  --text-display--line-height: 1;
+  --text-hero: 4rem;
+  --text-hero--line-height: 1.1;
+  --text-section: 2rem;
+  --text-section--line-height: 1.2;
+  --text-large: 1.25rem;
+  --text-large--line-height: 1.4;
+  --text-body: 1rem;
+  --text-body--line-height: 1.7;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-tiny: 0.75rem;
+  --text-tiny--line-height: 1.4;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-family-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Display - Large hero titles */
+  .text-display {
+    line-height: 1;
+    font-weight: 600;
+    font-family: var(--font-family-display);
+    letter-spacing: -0.02em;
+    color: rgb(40, 40, 40);
+  }
+
+  /* Hero - Main headings */
+  .text-hero {
+    font-size: var(--text-hero);
+    line-height: var(--text-hero--line-height);
+    font-weight: 600;
+    font-family: var(--font-family-display);
+    letter-spacing: -0.01em;
+    color: rgb(40, 40, 40);
+  }
+
+  /* Section - Section titles */
+  .text-section {
+    font-size: var(--text-section);
+    line-height: var(--text-section--line-height);
+    font-weight: 600;
+    font-family: var(--font-family-display);
+    letter-spacing: -0.01em;
+    color: rgb(40, 40, 40);
+  }
+
+  /* Large - Subheadings */
+  .text-large {
+    font-size: var(--text-large);
+    line-height: var(--text-large--line-height);
+    font-weight: 600;
+    font-family: var(--font-family-display);
+    color: rgb(40, 40, 40);
+  }
+
+  /* Body - Main text */
+  .text-body {
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    font-weight: 300;
+    font-family: var(--font-family-sans);
+    color: rgb(40, 40, 40);
+  }
+
+  /* Small - Metadata */
+  .text-small {
+    font-size: var(--text-small);
+    line-height: var(--text-small--line-height);
+    font-weight: 300;
+    font-family: var(--font-family-sans);
+    color: rgb(40, 40, 40);
+  }
+
+  /* Tiny - Very small text */
+  .text-tiny {
+    font-size: var(--text-tiny);
+    line-height: var(--text-tiny--line-height);
+    font-weight: 500;
+    font-family: var(--font-family-sans);
+    color: rgb(40, 40, 40);
+  }
+
+  .max-w-reading {
+    max-width: 42rem;
+  }
+}
