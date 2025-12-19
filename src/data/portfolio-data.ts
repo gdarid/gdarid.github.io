@@ -93,7 +93,7 @@ export const projects: Project[] = [
     description:
       "Une application Streamlit, pour afficher des \"courbes\" à partir de systèmes de Lindenmayer (version étendue)",
     techStack: ["Python", "Streamlit", "L-systems"],
-    liveUrl: "https://curves.streamlit.app/",
+    liveUrl: "", //"https://curves.streamlit.app/",
     githubUrl: "https://github.com/gdarid/curves",
     status: "active",
   },
