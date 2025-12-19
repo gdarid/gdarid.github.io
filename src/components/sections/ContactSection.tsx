@@ -9,7 +9,7 @@ export default function ContactSection() {
   return (
     <SplitSection title="Contact" id="contact">
       <div className="text-center space-y-6">
-        <div className="flex justify-center mb-8">
+        {/* <div className="flex justify-center mb-8">
           <img
             src={personalInfo.avatar}
             alt={personalInfo.name}
@@ -18,6 +18,7 @@ export default function ContactSection() {
         </div>
 
         <p className="text-large">{personalInfo.name}</p>
+        */}
 
         <a
           href={`mailto:${personalInfo.email}`}

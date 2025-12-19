@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import NotFound from "./pages/NotFound";
 import Hero1Page from "./pages/variants/Hero1Page";
+import AboutPage from "./pages/AboutPage";
 
 const App = () => (
   <ErrorBoundary>
@@ -16,6 +17,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Hero1Page />} />
+            <Route path="/about" element={<AboutPage />} />
             {/* <Route path="/shape1" element={<Shape1Page />} /> */}
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
