@@ -23,11 +23,16 @@ export default function FixedNavbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 h-[44px] bg-background border-b border-border z-50 flex items-center">
       <div className="w-full flex items-center justify-between">
-        {/* Left: Name + Role */}
+        {/* Left: Name */}
         <div className="flex items-center h-[44px] px-4 gap-2 md:gap-3 overflow-hidden">
-          <span className="text-sm font-medium whitespace-nowrap">{personalInfo.name}</span>
-          <span className="text-sm text-muted-foreground hidden sm:inline">•</span>
-          <span className="text-sm text-muted-foreground truncate hidden sm:inline">{personalInfo.title}</span>
+          <a
+            href="/"
+            target="_self"
+            rel="noopener noreferrer"
+            aria-label="Home"
+          >
+            <span className="text-sm font-medium whitespace-nowrap">{personalInfo.name}</span>
+          </a>
         </div>
 
         {/* Center: Photo */}
