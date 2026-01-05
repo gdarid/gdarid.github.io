@@ -54,7 +54,7 @@ export default function FixedNavbar() {
             <Mail size={16} />
           </a>
           <a
-            href="https://www.linkedin.com/in/guillaume-daridon-780410213/"
+            href="https://www.linkedin.com/in/guillaume-daridon/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-[44px] h-[44px] hover:text-[var(--color-brand)] transition-colors"
