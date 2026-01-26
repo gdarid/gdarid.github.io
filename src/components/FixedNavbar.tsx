@@ -1,5 +1,5 @@
 import { personalInfo } from "@/data/portfolio-data";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, LinkedIn, GitHub } from "@mui/icons-material";
 import { useState, useEffect } from "react";
 
 export default function FixedNavbar() {
@@ -51,7 +51,7 @@ export default function FixedNavbar() {
             className="flex items-center justify-center w-[44px] h-[44px] hover:text-[var(--color-brand)] transition-colors"
             aria-label="Email"
           >
-            <Mail size={16} />
+            <Mail sx={{ fontSize: 16 }} />
           </a>
           <a
             href="https://www.linkedin.com/in/guillaume-daridon/"
@@ -60,7 +60,7 @@ export default function FixedNavbar() {
             className="flex items-center justify-center w-[44px] h-[44px] hover:text-[var(--color-brand)] transition-colors"
             aria-label="LinkedIn"
           >
-            <Linkedin size={16} />
+            <LinkedIn sx={{ fontSize: 16 }} />
           </a>
           <a
             href="https://github.com/gdarid"
@@ -69,7 +69,7 @@ export default function FixedNavbar() {
             className="flex items-center justify-center w-[44px] h-[44px] hover:text-[var(--color-brand)] transition-colors"
             aria-label="GitHub"
           >
-            <Github size={16} />
+            <GitHub sx={{ fontSize: 16 }} />
           </a>
         </div>
       </div>
